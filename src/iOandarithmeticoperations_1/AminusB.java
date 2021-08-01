@@ -18,7 +18,7 @@ public class AminusB {
         int b = Integer.parseInt(st.nextToken());
 
         System.out.println(a-b);
-        System.out.println(a*b);
-        System.out.println(a/b);
+
+
     }
 }

@@ -61,5 +61,19 @@ public class AplusB {
 		System.out.println(a*b);
          */
 
+
+        /*
+        A/B is printed on the first line.
+         If the absolute or relative error between the actual correct answer and the output value is less than 10 -9, the correct answer is.
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		StringTokenizer st = new StringTokenizer(br.readLine()," ");
+		double a = Double.parseDouble(st.nextToken());
+		double b = Double.parseDouble(st.nextToken());
+
+		System.out.println(a/b);
+
+*/
+
     }
 }
