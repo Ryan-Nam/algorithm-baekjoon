@@ -4,6 +4,9 @@ import java.io.*;
 import java.util.StringTokenizer;
 
 /*
+
+Modular Arithmetic
+
 Is (A+B)%C equal to ((A%C) + (B%C))%C?
 
 Is (A×B)%C equal to ((A%C) × (B%C))%C?
