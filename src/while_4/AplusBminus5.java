@@ -58,7 +58,7 @@ public class AplusBminus5 {
         System.out.println(sb);
 
 
-        // Method 3 
+        // Method 3
         /*
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
