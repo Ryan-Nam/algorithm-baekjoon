@@ -38,6 +38,5 @@ public class Test_Grade {
 
         int score = Integer.parseInt(br.readLine());
         System.out.println((score>=90)?"A": (score>=80)?"B": (score>=70)?"C": (score>=60)?"D": "F");
-
     }
 }
