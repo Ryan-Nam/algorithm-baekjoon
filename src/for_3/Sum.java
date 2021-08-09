@@ -38,6 +38,8 @@ public class Sum {
         // Method 2 - BufferedReader
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int n = Integer.parseInt(br.readLine());
+        //int n = Integer.parseInt(new BufferedReader(new InputStreamReader(System.in)).readLine());
+
         br.close();
         int sum = 0;
 
