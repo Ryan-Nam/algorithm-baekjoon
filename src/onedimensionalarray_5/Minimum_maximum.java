@@ -21,7 +21,7 @@ find the minimu
  */
 public class Minimum_maximum {
     public static void main(String[] args) {
-
+        // Method 1 - Scanner
         Scanner sc = new Scanner(System.in);
 
         int n = sc.nextInt();
