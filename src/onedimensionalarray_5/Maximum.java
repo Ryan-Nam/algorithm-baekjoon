@@ -21,21 +21,30 @@ import java.util.Scanner;
 
 public class Maximum {
     public static void main(String[] args) {
-        // Method 1 - Scanner
         Scanner sc = new Scanner(System.in);
 
-        int n = 9;
-        int [] array = new int [9];
+        System.out.println("How many number?");
+        int N = sc.nextInt();
 
-        for (int i = 0; i < 9; i++) {
-            array[i] = sc.nextInt();
+        int arr[] = new int[N];
+        int max=0;
+        int count = 0; //max index
+
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = sc.nextInt();
         }
 
-        sc.close();
-        //Arrays.sort() method to filter,
-        Arrays.sort(array);
-        System.out.println(array[n-1]);
-        System.out.println(array[n-1]);
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > max) {
+                max = arr[i];
+                count = i + 1; //because index start from 0;
+            }
+        }
+
+        System.out.println(max);
+        System.out.println(count);
+
+        
 
     }
 }
