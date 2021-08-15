@@ -18,10 +18,11 @@ public class Sum_Of_Numbers {
 
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
+        String a = sc.next();
+        sc.close();
 
         for (int i = 0; i < n; i++) {
-            int p = sc.nextInt();
-            sum = sum + p;
+            sum = sum + a.charAt(i)-'0';
         }
         System.out.println(sum);
     }
