@@ -17,10 +17,16 @@ import java.util.Scanner;
 // Main purpose: if you can flip the number (type= String) that you are entered.
 public class FILIP {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
 
-        String str = sc.nextLine();
+        int A = in.nextInt();
+        int B = in.nextInt();
 
+        in.close();
 
+        A = Integer.parseInt(new StringBuilder().append(A).reverse().toString());
+        B = Integer.parseInt(new StringBuilder().append(B).reverse().toString());
+
+        System.out.print(A > B ? A : B);
     }
 }
