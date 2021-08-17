@@ -14,7 +14,7 @@ First and only line of output should contain the larger of the numbers in the in
 
 import java.util.Scanner;
 
-// Main purpose: if you can flip the number (type= String) that you are entered.
+// Main purpose: if you can flip the number (type= String) that you are entered.asdas
 public class FILIP {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
