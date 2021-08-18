@@ -11,5 +11,26 @@ The first row is given A, the second row is B, and the third row is C. A, B, and
 Print
 The first line prints the number of times 0 is used in the result of A × B × C. Similarly, from the second line to the tenth line, the number of times 1 through 9 is used in the result of A × B × C, one per line in turn.
  */
+
+import java.util.Scanner;
+
 public class Count_The_Number_Of {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        int value = (in.nextInt() * in.nextInt() * in.nextInt());
+        String str = Integer.toString(value);
+        in.close();
+
+        for (int i = 0; i < 10; i++) {
+            int count = 0;
+            for (int j = 0; j < str.length(); j++) {
+                if ((str.charAt(j) - '0') == i) {
+                    count++;
+                }
+            }
+            System.out.println(count);
+        }
+
+    }
 }
