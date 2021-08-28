@@ -1,5 +1,8 @@
 package Others;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class GPA_Array_Prac {
     public static void main(String[] args) {
 
@@ -24,5 +27,25 @@ public class GPA_Array_Prac {
         }
         System.out.println("Total: " + result + " cups");
 */
+        /*// Q3 + method included below
+        // Total Sum of Array elements
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        sc.close();
+        int[] arr = new int[n];
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = i*i;
+        }
+        System.out.println(Arrays.toString(arr));
+        System.out.println(sum(arr));*/
     }
+
+    /*// Q3's method
+    public static int sum(int[] numbers) {
+        int sum = 0;
+        for (int i = 0; i < numbers.length; i++) {
+            sum += numbers[i];
+        }
+        return sum;
+    }*/
 }
