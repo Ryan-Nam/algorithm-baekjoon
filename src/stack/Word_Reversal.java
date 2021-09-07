@@ -16,13 +16,36 @@ public class Word_Reversal {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
+        // Number of N (Loop)
         int n = sc.nextInt();
+        sc.nextLine();
 
         for (int i = 0; i < n; i++) {
-            //Stack<Character> stack = new Stack<Character>();
-            String str = sc.nextLine();
-            System.out.println(str);
-        }
+            Stack<Character> stack = new Stack<Character>();
+            String s = sc.nextLine();
 
+            // Number of s... hello ryan => 10 times..
+            for (int j = 0; j < s.length(); j++) {
+                // if there is a space
+                if(s.charAt(j) == ' '){
+                    // put everything out
+                    while (!stack.empty()) {
+                        System.out.print(stack.pop());
+                    }
+                    // Insert space
+                    System.out.print(" ");
+                } else {
+                    stack.push(s.charAt(j));
+                }
+            }
+
+            // this is for last word..because last word does not end before space.
+            while(!stack.empty()){
+                System.out.print(stack.pop());
+            }
+            // after loop, enter
+            System.out.println();
+        }
     }
 }
+
